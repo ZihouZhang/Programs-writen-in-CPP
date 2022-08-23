@@ -1,0 +1,16 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+using std::vector;
+int main()
+{
+    string word;
+    vector<string>text;
+    while (cin >> word) {//在行首按下ctrl z 组合键后，再按下回车键，代表cin循环的结束
+        text.push_back(word);
+    }
+    for (int k = 0; k < text.size(); k++) {
+        cout << text[k] << "  ";
+    }
+    return 0;
+}
